@@ -36,7 +36,7 @@ region-of-interest-based bottleneck.
 > **External test set (final leaderboard):** MAE **12.67 CL** — **3rd place** of all competing teams.
 
 <p align="center">
-  <img src="images/medai_block_diagram.png" width="900" alt="MedicalNet ResNet-34 + FiLM architecture"/>
+  <img src="images/medai_tensor_diagram.png" width="900" alt="MedicalNet ResNet-34 + FiLM architecture"/>
 </p>
 
 Our model combines:
