@@ -13,7 +13,7 @@
 
 <p align="center">
   <b>Team 7</b><br/>
-  Aryan Meena · [teammate] · [teammate]
+  Aryan Meena · Khushi Teli · Navya D. · Kaveri Goel · Kelsey S · Astika Tyagi 
 </p>
 
 <p align="center">
