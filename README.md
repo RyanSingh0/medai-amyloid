@@ -17,6 +17,13 @@ A **3D CNN regression pipeline** that predicts the amyloid **Centiloid score** d
 
 **Challenge:** A single model has to generalize across **four different PET tracers** (FBB, FBP, NAV, PIB), each with distinct intensity characteristics, while predicting a continuous score from large 3D volumes under tight compute and data constraints.
 
+## The team
+
+<p align="center">
+  <img src="images/Rubberducks_3rdplace_AmyloidPET_250.jpg" alt="Team 7 at BU MedAI Hackathon 2026" width="600">
+</p>
+<p align="center"><em>Team 7 — BU MedAI Hackathon 2026 · 3rd place</em></p>
+
 ---
 
 ## Approach
@@ -27,6 +34,21 @@ A **3D CNN regression pipeline** that predicts the amyloid **Centiloid score** d
 
 - **FiLM (Feature-wise Linear Modulation):** learns a per-tracer affine transform (`gamma * x + beta`) applied after each ResNet stage, initialized to identity so training starts equivalent to no conditioning. This lets one shared backbone adapt to tracer-specific intensity profiles instead of training four separate models.
 - **Differential learning rates:** backbone fine-tuned gently at `lr/10`, while the FiLM layers, tracer embedding, and head train at full `lr` from scratch.
+
+## Architecture
+
+<p align="center">
+  <img src="images/medai_tensor_diagram.png" alt="Tensor-flow architecture" width="820">
+</p>
+
+<details>
+<summary>System / block view</summary>
+
+<p align="center">
+  <img src="images/medai_block_diagram.png" alt="Block diagram" width="720">
+</p>
+
+</details>
 
 ### Key Design Decisions
 
